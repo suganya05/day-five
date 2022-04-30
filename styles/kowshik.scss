@@ -1,0 +1,33 @@
+@import "colors";
+
+@font-face {
+    font-family:'grold';
+    src: url(fonts/grold/Grold-Medium.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header-container{
+    width: 100%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    background-color: red;
+    padding: .5em;
+    place-items: center;
+
+ .header-list a{
+    gap: 20px;
+ }
+
+
+
+
+
+
+ }

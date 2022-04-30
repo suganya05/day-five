@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'grold';
+  font-family: "grold";
   src: url(fonts/grold/Grold-Medium.ttf);
 }
 
@@ -8,6 +8,43 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: grold;
+}
+
+#preloader {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: Black;
+  position: fixed;
+  z-index: 100;
+}
+
+#preloader .preloader-logo {
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  top: 300px;
+  left: 600px;
+}
+
+#preloader .preloader-logo h1 {
+  font-size: 80px;
+  padding-bottom: 270px;
+}
+
+#preloader .preloader-logo sup {
+  font-size: 10px;
+  padding: 1em;
+}
+
+#preloader .preloader-logo p {
+  color: white;
+  text-align: center;
 }
 
 .header-container {
@@ -17,12 +54,127 @@
   display: grid;
   -ms-grid-columns: 1fr 4fr 2fr;
       grid-template-columns: 1fr 4fr 2fr;
-  background-color: red;
-  padding: .5em;
+  padding: 0.5em;
   place-items: center;
+  border-bottom: 1px solid #e9e7e7;
+}
+
+.header-container sup {
+  padding: 1em;
+  font-size: 7px;
 }
 
 .header-container .header-list a {
+  padding: 40px;
+  font-size: 17px;
+  color: #1e1e1e;
+}
+
+.header-container .access-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  place-items: center;
+}
+
+.header-container .access-container i {
+  cursor: pointer;
+}
+
+.header-container .access-container .fingerprint {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.header-container span {
+  padding: 10px;
+}
+
+.header-container .access-container i {
+  font-size: 23px;
+}
+
+.sliderone {
+  width: 100%;
+  background-image: url(pics/bcg.jpg);
+  background-size: cover;
+}
+
+.sliderone h3 {
+  text-align: center;
+  padding: 2em;
+}
+
+.sliderone-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  place-items: center;
+}
+
+.slider-vlog {
+  color: #777777;
+}
+
+.slider-vlog .qoutes {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+.slider-vlog .slider-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
   gap: 20px;
+  margin-bottom: 50px;
+}
+
+.slider-vlog .slider-location .location-icon i {
+  color: #00CE53;
+  font-size: 22px;
+}
+
+.slider-vlog .slider-location .location h1 {
+  color: #00CE53;
+  font-size: 35px;
+}
+
+.slider-vlog .slider-location .location p {
+  color: #777777;
+  font-size: 18px;
+}
+
+.slider-vlog button {
+  width: 310px;
+  height: 40px;
+  color: white;
+  background-color: #00CE53;
+  border: none;
+  font-size: 20px;
+}
+
+.slider-title h1 {
+  font-size: 90px;
+  color: #ff9d29;
 }
 /*# sourceMappingURL=kowshik.css.map */

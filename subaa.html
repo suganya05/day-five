@@ -11,9 +11,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 </head>
 <body>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
   <nav>
@@ -80,7 +80,7 @@
   </nav>
 
 
-  <section>
+  <!-- <section>
     <div class="radio_button">
       <div class="radios">
         <input type="radio" name="slide" id="page_1" checked />
@@ -92,9 +92,14 @@
         <label for="page_2"></label>
         <label for="page_3"></label>
       </div>
-  </section>
+  </section> -->
 
-  <section>
+<header>
+  <div class="home">
+  <div class="single1">
+    <h1>deberry<sup>TM</sup></h1>
+  </div>
+  <div class="single">
     <div class="content">
       <h3>Customizable. South Indian</h3>
       <h1>meals</h1>
@@ -112,7 +117,9 @@
       </div>
       <button>Order now</button>
     </div>
-  </section>
+  </div>
+</div>
+</header>
 
 
 
@@ -128,10 +135,20 @@
 
 
 
-
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="slick.min.js"></script>
 
 
   <script>
+    $('.home').slick({
+          autoplay:false,
+          speed:1800,
+          arrows:false,
+          dots:true,
+          fade:false
+      })
+
     const btn=document.querySelector(".buttonX")
 const bar=document.querySelector(".bar")
 

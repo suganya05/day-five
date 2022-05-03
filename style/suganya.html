@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="suganya.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="deberry_nav">
+        <h1>deberry <sup> TM</sup></h1>
+        <img src="/images/shopping.png" />
+      </div>
+      <div class="fingerprint" onclick="openMenu()">
+        <img src="/images/fingerprint.png" />
+        <p>Access</p>
+      </div>
+      <div class="container-list">
+        <div class="container-title">
+          <h1>Access account</h1>
+          <button class="buttonX" onclick="closeMenu()">&times;</button>
+        </div>
+        <div class="credential-access">
+          <p>Resent credentials.</p>
+          <div class="email-toggle">
+            <h2>Email</h2>
+            <div>
+              <input type="checkbox" class="toggle" id="android" />
+              <label for="android" class="rounder"></label>
+            </div>
+            <h2>Mobile</h2>
+          </div>
+        </div>
+        <div class="email-container">
+          <i class="fa-regular fa-user"></i>
+          <input type="email" class="input" placeholder="  Email" />
+        </div>
+        <div class="Password-container">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" class="input" placeholder="  Password " />
+        </div>
+        <div class="access-btn">
+          <button>Access now</button>
+        </div>
+
+        <div class="pick-up-line">
+          <h1>HUNGRY, but</h1>
+
+          <p>Don't have an account ?</p>
+        </div>
+
+        <img src="/images/Salad_Monochromatic 1.png" />
+
+        <div class="account-btn">
+          <button>Create one now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="radio_button">
+      <div class="radios">
+        <input type="radio" name="slide" id="page_1" checked />
+        <input type="radio" name="slide" id="page_2" />
+      </div>
+      <div class="dots">
+        <label for="page_1"></label>
+        <label for="page_2"></label>
+      </div>
+    </div>
+
+    <div class="content">
+      <h3>Customizable. South Indian</h3>
+      <h1>meals</h1>
+      <img
+        src="/images/south-indian-food-11519627818vod7xtitqa-removebg-preview 1.png"
+      />
+      <p>
+        Eat healthy. Eat homemade.<br />
+        without going bankrupt.
+      </p>
+      <div class="content_item">
+        <i class="fa-solid fa-location-dot"></i>
+        <div class="content_location">
+          <p>now in</p>
+          <span>Koramangla</span>
+        </div>
+      </div>
+      <button>Order now</button>
+    </div>
+
+    <div class="content_two">
+      <h1>kaathuvaakla <br /><span class="konjam_c"> konjam </span>sugar.</h1>
+      <p>Tired of Banglore Sugar Sambar ?</p>
+      <h5>TRY PROPER SOUTH INDIAN MEAL</h5>
+    </div>
+    <div class="content2_item">
+      <div class="item2">
+        <img src="/images/food.png" />
+      </div>
+      <div class="content2_location">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>now in</p>
+        <span>Koramangla</span>
+        <button>Order now</button>
+      </div>
+    </div>
+
+    <script>
+      const open = document.querySelector(".container-list");
+      const close = document.querySelector(".buttonX");
+
+      function openMenu() {
+        open.style.display = "block";
+      }
+      function closeMenu() {
+        open.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,521 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@font-face {
+  font-family: "grold";
+  src: url(/images/FontsFree-Net-Fontspring-DEMO-grold-bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "grold";
+}
+
+.navbar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2.5fr 1fr;
+      grid-template-columns: 2.5fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 67px;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.deberry_nav {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "grold";
+  padding: 0.5em;
+}
+
+.deberry_nav h1 {
+  font-size: 42px;
+  letter-spacing: -0.09em;
+}
+
+.deberry_nav sup {
+  font-size: 10px;
+  letter-spacing: 0px;
+}
+
+.deberry_nav img {
+  width: 24px;
+  height: 24px;
+  left: 5%;
+  right: 5%;
+  top: 4.17%;
+  bottom: 33.33%;
+}
+
+.fingerprint {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fingerprint img {
+  width: 24px;
+  height: 24px;
+}
+
+.fingerprint p {
+  color: #777777;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.container-list {
+  position: absolute;
+  background-color: #ffffff;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100vh;
+  padding: 25px 25px;
+  z-index: 10000;
+}
+
+.container-list .container-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-list .container-title h1 {
+  font-size: 20px;
+  color: #010101;
+}
+
+.container-list .container-title .buttonX {
+  outline: none;
+  background: none;
+  border: none;
+  font-size: 35px;
+  color: #777777;
+}
+
+.container-list .credential-access {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.container-list .credential-access p {
+  font-size: 15px;
+  color: #0066ff;
+}
+
+.container-list .credential-access .email-toggle {
+  color: #777777;
+  font-size: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.container-list .credential-access .toggle {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  margin-left: 10px;
+}
+
+.container-list .credential-access .toggle:checked + .rounder {
+  background-color: yellowgreen;
+}
+
+.container-list .credential-access .toggle:checked + .rounder::after {
+  left: 20px;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all ease-out 0.2s;
+  transition: all ease-out 0.2s;
+  background-color: #00ce53;
+}
+
+.container-list .credential-access .rounder {
+  display: inline-block;
+  width: 16px;
+  height: 8px;
+  border-radius: 11px;
+  background-color: #d1d3cf;
+  cursor: pointer;
+  position: relative;
+}
+
+.container-list .credential-access .rounder::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #00ce53;
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 7px;
+  top: -1px;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all ease-out 0.2s;
+  transition: all ease-out 0.2s;
+}
+
+.container-list .email-container {
+  width: 100%;
+  height: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 18px;
+  border: 1px solid #c8c8c8;
+  gap: 25px;
+  place-items: center;
+  padding: 20px;
+}
+
+.container-list .email-container input {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.container-list .email-container i {
+  color: #777777;
+}
+
+.container-list .Password-container {
+  width: 100%;
+  height: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+  border: 1px solid #c8c8c8;
+  gap: 25px;
+  place-items: center;
+  padding: 20px;
+}
+
+.container-list .Password-container input {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.container-list .Password-container i {
+  color: #777777;
+}
+
+.container-list .access-btn {
+  width: 100%;
+  height: 32px;
+  background-color: #060606;
+  margin-bottom: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-list .access-btn button {
+  color: #ffffff;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 12px;
+}
+
+.container-list .pick-up-line {
+  margin-bottom: 30px;
+}
+
+.container-list .pick-up-line h1 {
+  font-size: 27px;
+  font-weight: 100;
+}
+
+.container-list img {
+  width: 70%;
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.container-list .account-btn {
+  width: 100%;
+  height: 32px;
+  background-color: #00ce53;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.container-list .account-btn button {
+  font-size: 12px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.radio_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+.radio_button .dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5px;
+}
+
+.radio_button input {
+  display: none;
+}
+
+.radio_button label {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: solid #e5e5e5 3px;
+  margin-left: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+.radio_button label:hover {
+  border: none;
+  background: #00ce53;
+}
+
+.content {
+  color: #000000;
+  font-size: 21px;
+  text-align: center;
+}
+
+.content h3 {
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.content h1 {
+  font-size: 115px;
+  margin-top: -12px;
+  letter-spacing: -0.09em;
+  background: radial-gradient(95.56% 2173.67% at 3.23% 25.96%, #ff9d29 0%, #ffd600 47.05%, #ff7a00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0px 1.87736px 13.1415px rgba(182, 182, 182, 0.14);
+}
+
+.content img {
+  width: 360px;
+  height: 273px;
+  margin-top: -48px;
+}
+
+.content p {
+  margin-top: 20px;
+  color: #777777;
+  font-weight: 400;
+}
+
+.content .content_item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.content .content_item i {
+  color: #00ce53;
+  margin-top: 35px;
+  margin-left: 70px;
+}
+
+.content .content_item .content_location {
+  display: inline-block;
+  margin-right: 100px;
+  margin-top: 10px;
+}
+
+.content .content_item p {
+  color: #777777;
+  font-size: 16px;
+  margin-left: -100px;
+}
+
+.content .content_item span {
+  font-family: "Kaushan Script", cursive;
+  font-size: 30px;
+  color: #00ce53;
+}
+
+.content button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 32px;
+  margin-left: 25px;
+  margin-top: 20px;
+  font-size: 15px;
+  width: 309px;
+  color: #ffffff;
+  background: #00ce53;
+  border: none;
+}
+
+.content_two {
+  text-align: center;
+}
+
+.content_two h1 {
+  font-size: 53px;
+  letter-spacing: -0.09em;
+  margin-top: 5px;
+  background: radial-gradient(95.56% 2173.67% at 3.23% 25.96%, #ff9d29 0%, #ffd600 47.05%, #ff7a00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0px 1.87736px 13.1415px rgba(182, 182, 182, 0.14);
+}
+
+.content_two .konjam_c {
+  color: #000000;
+}
+
+.content_two p {
+  color: #777777;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.content_two h5 {
+  color: #00ce53;
+  font-size: 19px;
+  margin-top: 15px;
+}
+
+.content2_item {
+  position: relative;
+}
+
+.content2_item .item2 {
+  position: absolute;
+  width: 355.19px;
+  height: 466.8px;
+  left: 77px;
+  top: 0px;
+}
+
+.content2_item .content2_location {
+  position: absolute;
+  width: 155px;
+  height: 80.5px;
+  left: 18px;
+  top: 200px;
+}
+
+.content2_item .content2_location i {
+  color: #00ce53;
+}
+
+.content2_item .content2_location p {
+  font-size: 15px;
+  color: #777777;
+}
+
+.content2_item .content2_location span {
+  font-family: "Kaushan Script", cursive;
+  font-size: 30px;
+  color: #00ce53;
+}
+
+.content2_item button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 32px;
+  margin-left: 25px;
+  margin-top: 90px;
+  font-size: 15px;
+  width: 309px;
+  color: #ffffff;
+  background: #00ce53;
+  border: none;
+}
+/*# sourceMappingURL=suganya.css.map */

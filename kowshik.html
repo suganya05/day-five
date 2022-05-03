@@ -9,8 +9,16 @@
     <link rel="stylesheet" href="./styles/kowshik.css">
       <!-- font icons  -->
       <script src="https://kit.fontawesome.com/9dc5a48b67.js" crossorigin="anonymous"></script> 
+
+       <!-- font link -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Mirza:wght@400;500;600;700&family=Mulish:wght@200;300;400;500;600;700&family=Nunito+Sans:wght@200;300&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,300;1,500;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- js link  -->
+  <link rel="stylesheet" href="kowshik.js">
     <!-- loader start's here -->
 
     <div id="preloader">
@@ -21,28 +29,85 @@
     </div>
 
 
-    <!-- loader end's here -->
-
+    <!-- loader end's here --> 
+     
     <!-- header start's here -->
 
-    <div class="header">
-        <div class="header-container">
-            <div class="logo">
+        <div class="header">
+           <div class="header-container">
+           
+             <span class="hamburger" onclick="openMenu()">&#9776;</span>
+          
+             <div class="logo">
                 <h1>deberry<sup>TM</sup></h1>
-            </div>
-            <div class="header-list">
-                <a href="#">Home</a>
-                <a href="#">Dishes</a>
-                <a href="#">About</a>
-                <a href="#">Review</a>
-            </div>
-            <div class="access-container">
+             </div>
+        
+            
+             <div class="access-container">
               <div class="cart">
                 <i class="fa-solid fa-cart-shopping"></i>
               </div>
-              <div class="fingerprint">
+              <div class="fingerprint" onclick="openMenus()">
                 <i class="fa-solid fa-fingerprint"></i>
                 <p>Access</p>
+                
+              </div>
+
+
+<!-- 
+              <div class="sidebar">
+                <button  class="buttonX" onclick="closeMenu()">&times;</button>
+                <a href="Home"></a>
+                <a href="Menu"></a>
+                <a href="Dishes"></a>
+                <a href="Contact"></a>
+                <a href="Review"></a>
+             </div>
+ -->
+
+
+
+
+              <div class="dropdown-list" >
+                  <div class="drop-title">
+                  <h5>Access account</h5>
+                  <button  class="buttonX" onclick="closeMenus()">&times;</button>
+                  
+                </div>
+                <div class="account-switcher">
+                    <div class="credential">
+                    <h4>Reset credentials</h4>
+                    </div>
+                    <div class="switch-user">
+                        <p>Email</p>
+                        <div>
+                            <input type="checkbox" class="toggle" id="android">
+                            <label for="android" class="rounded"> </label>
+                        </div>
+                        <p>Mobile</p>
+                    </div>
+                </div>
+                <div class="mail">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="email" class="search-inputs" placeholder="  Email"> 
+                </div>
+                <div class="Password">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" class="search-inputs" placeholder="   Password"> 
+                </div>
+                <div class="access-btn">
+                <button>
+                    Access now.
+                </button>
+             </div>
+                <h1>HUNGRY,but</h1>
+                <h3>
+                    Dont't have an account ?
+                </h3>
+                <img src="./pics/Vector.jpg" alt="">
+                <div class="acc-create-btn">
+                    <button>Create one now</button>
+                </div>
               </div>
             </div>
         </div>
@@ -53,9 +118,18 @@
     <!-- slider 1 start's here -->
    <section>
     <div class="sliderone">
-        <h3>Customizable. South Indian</h3>
-        <div class="sliderone-container">
 
+            <div class="slider-navigation">
+              <div class="nav-btn"></div>
+              <div class="nav-btn"></div>
+            </div>
+        
+            <h3>Customizable. South Indian</h3>
+        
+    
+        
+        <div class="sliderone-container">
+            
             <div class="slider-title">
                 <h1>meals</h1>
                 <img src="pics/image1.jpg" alt="sliderone image">
@@ -106,6 +180,48 @@ window.addEventListener("load",function(){
     loader.style.display = "none"
 
 })
+
+
+const btns = document.querySelectorAll(".nav-btn");
+
+var sliderNav = function(manual){
+
+ btns.forEach((btn) => {
+     btn.classList.remove("active");
+ });
+
+    btns[manual].classList.add("active");
+}
+
+btns.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+        sliderNav(i);
+    });
+});
+
+
+const menubtn=document.querySelector(".buttonX")
+const sidebar=document.querySelector(".sidebar")
+
+function openMenu() {
+    sidebar.style.display="block"
+
+}
+
+function closeMenu() {
+    sidebar.style.display="none"
+
+}
+ const accessbtn = document.querySelector(".buttonX")
+ const list = document.querySelector(".dropdown-list")
+   
+ function openMenus() {
+   list.style.display="block"
+ }
+
+ function closeMenus() {
+     list.style.display="none"
+ }
 
 
 </script>

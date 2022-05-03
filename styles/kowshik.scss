@@ -1,9 +1,13 @@
 @import "colors";
 
 @font-face {
-  font-family: "grold";
-  src: url(fonts/grold/Grold-Medium.ttf);
+  font-family:"grolds";
+  src: url(/fonts/FontsFree-Net-Fontspring-DEMO-grold-bold.ttf);
+  font-weight: normal;
 }
+
+
+
 
 * {
   margin: 0;
@@ -11,7 +15,8 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: grold;
+  font-family: "grolds";
+  
 }
 #preloader{
     width: 100%;
@@ -32,6 +37,9 @@
      h1{
          font-size: 80px;
          padding-bottom: 270px;
+         font-family: grold;
+         
+            
      }
      sup{
          font-size: 10px;
@@ -47,14 +55,75 @@
 
 }
 
+.header{
+    width: 100%;
+   
+}
+
 .header-container {
+ padding: 0 40px;
   width: 100%;
   height: 60px;
-  display: grid;
-  grid-template-columns: 1fr 4fr 2fr;
-  padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
   place-items: center;
   border-bottom: 1px solid rgb(233, 231, 231);
+
+
+  .hamburger {
+      font-size: 27px;
+      cursor: pointer;
+  }
+  .logo{
+      padding: 0 30px;
+
+      h1{
+          letter-spacing:-3.5px;
+          
+          font-size: 40px;
+      
+         sup{
+             letter-spacing: 0;
+         }
+      
+      
+      
+      
+      
+        }
+
+
+
+      
+  }
+  .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(/pics/bcg.jpg) ;
+    object-fit: cover;
+    background: cover;
+    z-index: 1000;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 70vh;
+
+    .buttonX{
+        outline: none;
+        background: none;
+        border: none;
+        color: white;
+        font-size:35px ;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+
+    a{
+        color: whitesmoke;
+    }
+ }
   
   sup {
     padding: 1em;
@@ -71,14 +140,19 @@
       width: 100%;
       height: 100%;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: flex-end;
       background-color: white;
       align-items: center;
       place-items: center;
-
+      gap: 60px;
 
     i{
         cursor: pointer;
+    }
+
+
+    .cart i{
+        color: rgb(124, 123, 123);
     }
 
     .fingerprint{
@@ -87,8 +161,28 @@
         align-items: center;
         gap: 10px;
         cursor: pointer;
+        position: relative;
+
+
+       p{
+           font-size: 11px;
+           color: $mygrey;
+       }
+
+        
+    
+    i{
+        background: radial-gradient(95.56% 2173.67% at 3.23% 25.96%, #FF9D29 0%, #FFD600 47.05%, #FF7A00 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+           -webkit-background-clip: text;
+             -webkit-text-fill-color: transparent;
+               background-clip: text;
     }
-}
+
+    
+    }
+
+
+ }
 
  span{
    padding: 10px;
@@ -96,28 +190,325 @@
   .access-container i{
       font-size: 23px;
   }
-}
-// slider 
-.sliderone{
-    width: 100%;
-    background-image: url(pics/bcg.jpg);
-    background-size: cover;
+
+ 
 
 
-    h3{
-        text-align: center;
-        padding: 2em;
+
+
+  .dropdown-list{
+      position: absolute;
+      top: 0;
+      background-color: white;
+      right: 0;
+      width:253px;
+      height: 100vh;
+      padding: 3em 1.5em;
+      z-index: 100000;
+
+
+    .drop-title{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+
+     .buttonX{
+         font-size: 20px;
+         border: none;
+         outline: none;
+         background: none;
+         cursor: pointer;
+     }
+
+
+
+    }
+    .account-switcher{
+       display: flex;
+       justify-content: space-between;
+       font-size: 11px;
+       margin-bottom: 20px;
+
+       .credential{
+        color: $myblue;
+        cursor: pointer;
+       }
+       .credential:hover{
+           color: blue;
+       }
+
+     .switch-user{
+       display: flex;
+       justify-content: center;
+       gap: 10px;
+       place-items: center;
+
+     p{
+         color: $mygrey;
+         font-size: 11px;
+         
+     }
+
+     .toggle{
+         visibility: hidden;
+         position: absolute;
+         left: 0;
+         margin-left: 10px;
+     }
+     .toggle:checked + .rounded{
+         background-color: greenyellow;
+     }
+     .toggle:checked + .rounded::after{
+         left: 20px;
+         
+         transform: translateX(-100%);
+         transition: all ease-out 0.2s;
+         background-color: $myGreen;
+     }
+     .rounded{
+         display: inline-block;
+         width: 15px;
+         height: 7px;
+         border-radius: 11px;
+         background-color: rgb(209, 211, 207);
+         cursor: pointer;
+         position: relative;
+
+     }
+     .rounded::after{
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color:$myGreen;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1 );
+        position: absolute;
+        left: 0;
+        top: -1.3px;
+        transform: translateX(-50%);
+        transition: all ease-out 0.2s;
+
     }
 
+     }
+
+      
+      }
+      .mail{
+          display: flex;
+        width: 100%;
+        height: 47px; 
+        place-items: center;
+        padding: 1em;
+        gap: 20px;
+        margin-bottom: 20px;
+        border: 0.1px solid grey;
+
+     
+        input{
+            border: none;
+            background: none;
+            outline: none;
+        }
+
+
+
+
+
+
+    }
+    .Password{
+        display: flex;
+        width: 100%;
+        height: 47px;
+        border: 0.1px solid grey;
+        place-items: center;
+        padding: 1em;
+        gap: 20px;
+        margin-bottom: 30px;
+
+
+
+
+
+        input{
+            border: none;
+            background: none;
+            outline: none;
+        }
+
+    }
+
+    .access-btn{
+        width: 100%;
+        background-color: black;
+        margin-bottom: 60px;
+        
+
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 32px;
+            color: white;
+            border: none;
+            outline: none;
+            background: none;
+            cursor: pointer;
+        }
+        
+         
+    }
+
+
+   h1{
+       font-size: 26px;
+       font-weight: 400;
+   }
+  p{
+      font-size: 16px;
+      font-weight: 400;
+      
+  }
+
+  img{
+      margin-top: 30px;
+      width: 100%;
+      margin-bottom: 30px;
+  }
+
+
+
+  .acc-create-btn{
+      width: 100%;
+      height: 32px;
+      background-color: $myGreen;
+      color: white;
+      
+
+      button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 32px;
+        color: white;
+        border: none;
+        outline: none;
+        background: none;
+        cursor: pointer;
+        
+      }
+
+   }
+ }
+
 }
+
+
+
+
+
+
+
+// slider 
+
+
+
+
+
+.sliderone{
+   
+    h3{
+        text-align: center;
+        letter-spacing: 1px;
+        font-weight: 400;
+        padding: 1em;
+    }
+
+    .slider-navigation{
+        z-index: 888;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transform: translateY(80px);
+        margin-bottom: 10px;
+        top: -70;
+  
+       .nav-btn{
+       
+       width: 6px;
+       height: 6px;
+       background-color: rgb(228, 186, 186);
+       border-radius: 50%;
+       cursor: pointer;
+       box-shadow: 0 0 2px rgba(255 ,255, 255 ,0.5);
+       transition: 0.3s ease;
+       }
+  
+       .nav-btn.active{
+           background-color: $myGreen;
+       }
+   
+       .nav-btn:not(:last-child){
+           margin-right: 5px;
+       }
+  
+       .nav-btn:hover{
+          transform: scale(1.2);
+       }
+  
+  
+  
+     }
+
+     
+
+   width: 100%;
+    background-image: url(pics/bcg.jpg);
+    background: cover;
+    .slider-title {
+
+        h1{
+       
+        font-size: 110px;
+        background: radial-gradient(95.56% 2173.67% at 3.23% 25.96%, #FF9D29 0%, #FFD600 47.05%, #FF7A00 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+               -webkit-background-clip: text;
+                 -webkit-text-fill-color: transparent;
+                   background-clip: text;
+        text-align: center;
+        margin-bottom: 10px;
+        letter-spacing: -7px;
+       
+       }
+       img{
+           width: 100%;
+           margin-top: -30px;
+       }
+     
+    } 
+
+
+  
+
+
+
+
+    
+}
+
+
 
 
 .sliderone-container{
+
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     place-items: center;
-    
-    }
+
 
     .slider-vlog {
        
@@ -126,8 +517,15 @@
         
         
      .qoutes {
-         margin-bottom: 40px;
-         font-size: 30px; 
+         margin-bottom: 30px;
+         text-align: center;
+         font-weight: 400;
+         font-size: 20px;
+         line-height: 24px;
+         letter-spacing: 1px;
+
+
+
        }
         
 
@@ -137,43 +535,114 @@
      place-items: center;
      gap:20px;
      margin-bottom: 50px;
+     justify-content: center;s
     
-     .location-icon i {
-        color: $myGreen;
-       font-size: 22px;
-       }
+     
  
      .location {
 
        h1{
            color: $myGreen;
            font-size: 35px;
+           font-family: 'Kaushan Script', cursive;
+           font-weight: 300;
        }
 
        p{
            color: $mygrey;
-           font-size: 18px;
+           font-size: 15px;
        }
        
      }
 
      
 
-    }
+     }
 
-    button{
+     button{
         width: 310px;
         height: 40px;
         color: white;
         background-color: $myGreen;
         border: none;
-        font-size: 20px;
+        font-size: 17px;
+        letter-spacing: 1px;
+        cursor: pointer;
+     }
+    
+    }
+    .location-icon i {
+        color: $myGreen;
+       font-size: 22px;
+       }
+ 
+}
+@media (max-width:768px){
+    
+    .sliderone-container{
+       grid-template-columns: 1fr;
+       width: 100%;
+    
+
+   }
+}
+
+@media (max-width:500px){
+
+
+    .sidebar{
+        display: none;
+    }
+
+ .hamburger{
+     display: none;
+ }
+ 
+
+ .header-container{
+     padding: 0 10px;
+
+     .logo {
+        padding: 0;
+     }
+     .access-container{
+        gap:30px;
+
+
+        i{
+            font-size: 17px;
+        }
+     }
     }
  
+    .slider-title {
+
+        h1{
+        font-size: 100px;
+        color: $myRedyellow;
+        text-align: center;
+       }
+
+       img{
+           height: 273px;
+       }
+    }
+
+    .sliderone-container .slider-vlog .qoutes{
+        font-size: 21px;
+        padding-top: 20px;
+    }
+    
+    
+
+    .sliderone h3{
+        padding: 0.5em;
+    }
+
+    .sliderone-container .slider-vlog .slider-location{
+        margin-bottom: 20px;
+    }
+
    
-}
-.slider-title h1{
-     font-size: 90px;
-     color: $myRedyellow;
-  
+
 }

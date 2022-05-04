@@ -10,6 +10,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
   </head>
   <body>
     <div class="navbar">
@@ -39,11 +43,11 @@
           </div>
         </div>
         <div class="email-container">
-          <i class="fa-regular fa-user"></i>
+          <img src="/images/user.png" />
           <input type="email" class="input" placeholder="  Email" />
         </div>
         <div class="Password-container">
-          <i class="fa-solid fa-lock"></i>
+          <img src="/images/lock.png" />
           <input type="password" class="input" placeholder="  Password " />
         </div>
         <div class="access-btn">
@@ -64,55 +68,57 @@
       </div>
     </div>
 
-    <div class="radio_button">
-      <div class="radios">
-        <input type="radio" name="slide" id="page_1" checked />
-        <input type="radio" name="slide" id="page_2" />
-      </div>
-      <div class="dots">
-        <label for="page_1"></label>
-        <label for="page_2"></label>
-      </div>
-    </div>
-
-    <div class="content">
-      <h3>Customizable. South Indian</h3>
-      <h1>meals</h1>
-      <img
-        src="/images/south-indian-food-11519627818vod7xtitqa-removebg-preview 1.png"
-      />
-      <p>
-        Eat healthy. Eat homemade.<br />
-        without going bankrupt.
-      </p>
-      <div class="content_item">
-        <i class="fa-solid fa-location-dot"></i>
-        <div class="content_location">
-          <p>now in</p>
-          <span>Koramangla</span>
+    <div class="slider">
+      <div class="content">
+        <h3>Customizable. South Indian</h3>
+        <h1>meals</h1>
+        <img src="/images/south-indian-food.png" />
+        <p>
+          Eat healthy. Eat homemade.<br />
+          without going bankrupt.
+        </p>
+        <div class="content_item">
+          <img src="/images/map-pin.png" />
+          <div class="fp_location">
+            <p>now in</p>
+            <span>Koramangla</span>
+          </div>
         </div>
-      </div>
-      <button>Order now</button>
-    </div>
-
-    <div class="content_two">
-      <h1>kaathuvaakla <br /><span class="konjam_c"> konjam </span>sugar.</h1>
-      <p>Tired of Banglore Sugar Sambar ?</p>
-      <h5>TRY PROPER SOUTH INDIAN MEAL</h5>
-    </div>
-    <div class="content2_item">
-      <div class="item2">
-        <img src="/images/food.png" />
-      </div>
-      <div class="content2_location">
-        <i class="fa-solid fa-location-dot"></i>
-        <p>now in</p>
-        <span>Koramangla</span>
         <button>Order now</button>
       </div>
+
+      <div class="content_two">
+        <h1>kaathuvaakla</h1>
+        <h2>konjam <span> sugar.</span></h2>
+        <p>Tired of Banglore Sugar Sambar ?</p>
+        <h5>TRY PROPER SOUTH INDIAN MEAL</h5>
+
+        <div class="content2_item">
+          <div class="item2">
+            <img src="/images/food.png" />
+          </div>
+          <div class="content2_location">
+            <img src="/images/map-pin.png" />
+            <p>now in</p>
+            <span>Koramangla</span>
+            <button>Order now</button>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/slick.min.js"></script>
+
     <script>
+      $(".slider").slick({
+        autoplay: false,
+        speed: 800,
+        arrows: false,
+        dots: true,
+        fade: false,
+      });
+
       const open = document.querySelector(".container-list");
       const close = document.querySelector(".buttonX");
 

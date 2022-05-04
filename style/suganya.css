@@ -432,4 +432,88 @@ body {
   background: #00ce53;
   border: none;
 }
+
+.content_two {
+  text-align: center;
+}
+
+.content_two h1 {
+  font-size: 55px;
+  letter-spacing: -0.09em;
+  margin-top: 30px;
+  line-height: 45px;
+  background: radial-gradient(95.56% 2173.67% at 3.23% 25.96%, #ff9d29 0%, #ffd600 47.05%, #ff7a00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0px 1.87736px 13.1415px rgba(182, 182, 182, 0.14);
+}
+
+.content_two p {
+  color: #777777;
+  font-size: 17px;
+  margin-top: 15px;
+  font-weight: 400;
+}
+
+.content_two h5 {
+  color: #00ce53;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.content2_item {
+  position: relative;
+}
+
+.content2_item img {
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  left: 55px;
+  top: 0px;
+}
+
+.content2_item .content2_location {
+  position: absolute;
+  width: 155px;
+  height: 80.5px;
+  left: 18px;
+  top: 190px;
+}
+
+.content2_item .content2_location i {
+  color: #00ce53;
+}
+
+.content2_item .content2_location p {
+  font-size: 15px;
+  color: #777777;
+}
+
+.content2_item .content2_location span {
+  font-family: "Kaushan Script", cursive;
+  font-size: 30px;
+  color: #00ce53;
+}
+
+.content2_item button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 32px;
+  margin-left: 25px;
+  margin-top: 135px;
+  font-size: 15px;
+  width: 309px;
+  color: #ffffff;
+  background: #00ce53;
+  border: none;
+}
 /*# sourceMappingURL=suganya.css.map */

@@ -16,6 +16,26 @@
     />
   </head>
   <body>
+    <div class="alert_box">
+      <div class="alert_content">
+        <p>
+          This site uses cookies to provide you with a more responsive and
+          personalized service. By using this site you agree to our of cookies.
+          Please read our cookie notice.
+        </p>
+        <div class="alert_accept">
+          <button>Accept cookies</button>
+          <div class="alert_settings">
+            <img src="/images/tool.png" />
+            <p>Settings</p>
+          </div>
+        </div>
+      </div>
+      <div class="alert_close">
+        <button class="buttonY">&times;</button>
+        <p>Close</p>
+      </div>
+    </div>
     <div class="navbar">
       <div class="deberry_nav">
         <h1>deberry <sup> TM</sup></h1>
@@ -91,11 +111,14 @@
 
       <div class="content_two">
         <h1>kaathuvaakla</h1>
-        <h2>konjam <span> sugar.</span></h2>
-        <p>Tired of Banglore Sugar Sambar ?</p>
+        <h2>konjam <span> sugar</span></h2>
+        <h3>Tired of Banglore Sugar Sambar ?</h3>
         <h5>TRY PROPER SOUTH INDIAN MEAL</h5>
 
         <div class="content2_item">
+          <div class="flip-food">
+            <img src="/images/food_flip.png" />
+          </div>
           <div class="item2">
             <img src="/images/food.png" />
           </div>
@@ -123,6 +146,8 @@
 
       const open = document.querySelector(".container-list");
       const close = document.querySelector(".buttonX");
+      const closeBtn = document.querySelector(".alert_box .alert_close");
+      const toastLink = document.querySelector(".alert_box");
 
       function openMenu() {
         open.style.display = "block";
@@ -130,6 +155,16 @@
       function closeMenu() {
         open.style.display = "none";
       }
+
+      const stopDisplayToast = () => {
+        console.log("click");
+        localStorage.setItem(".displayToast", false);
+
+        toastLink.remove("alert_box");
+      };
+
+      closeBtn.addEventListener("click", stopDisplayToast);
+      toastLink.addEventListener("click", stopDisplayToast);
     </script>
   </body>
 </html>

@@ -26,6 +26,65 @@ $radio_color: #d8d8d8;
   font-family: "grold";
 }
 
+.alert_box {
+  font-size: 11px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: $black_3;
+  color: $grey_1;
+  padding: 30px;
+  .alert_content {
+    p {
+      font-size: 16px;
+    }
+    .alert_accept {
+      display: flex;
+      margin-top: 20px;
+
+      gap: 10px;
+
+      button {
+        font-size: 13px;
+        background-color: $green;
+        color: $white;
+        border: none;
+        text-align: center;
+        padding: 11px;
+        width: 100%;
+      }
+      .alert_settings {
+        display: flex;
+        gap: 10px;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        p {
+          color: $blue;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .alert_close {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    .buttonY {
+      outline: none;
+      background: none;
+      border: none;
+      font-size: 25px;
+      color: $white;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
 .navbar {
   display: grid;
   grid-template-columns: 2.5fr 1fr;
@@ -296,7 +355,6 @@ $radio_color: #d8d8d8;
       margin-top: -48px;
     }
     p {
-      margin-top: 20px;
       color: $grey;
       font-weight: 400;
     }
@@ -334,6 +392,7 @@ $radio_color: #d8d8d8;
       padding: 10px 32px;
       margin-left: 25px;
       margin-top: 15px;
+      margin-bottom: 20px;
       font-size: 15px;
       width: 90%;
       color: $white;
@@ -383,7 +442,7 @@ $radio_color: #d8d8d8;
         text-shadow: 0px 1.87736px 13.1415px rgba(182, 182, 182, 0.14);
       }
     }
-    p {
+    h3 {
       color: $grey;
       font-size: 17px;
       margin-top: 30px;
@@ -396,29 +455,35 @@ $radio_color: #d8d8d8;
     }
   }
   .content2_item {
+    width: 100%;
     position: relative;
-    img {
-      position: absolute;
-      width: 300px;
-      height: 460px;
-      left: 60px;
-      top: 0px;
+    .flip-food {
+      display: none;
     }
+    .item2 {
+      img {
+        position: absolute;
+        width: 300px;
+        height: 460px;
+        right: 0px;
+        top: 0px;
+      }
+    }
+
     .content2_location {
       position: absolute;
-      width: 155px;
-      height: 80.5px;
+      text-align: left;
+      width: 100%;
+      height: 100%;
       left: 18px;
       top: 172px;
       img {
-        width: 23px;
+        width: 25px;
         height: 24px;
-        left: 10px;
         bottom: 30px;
       }
       p {
         font-size: 15px;
-        margin-right: 100px;
         color: $grey;
       }
       span {
@@ -432,10 +497,9 @@ $radio_color: #d8d8d8;
       justify-content: center;
       align-items: center;
       padding: 10px 32px;
-      margin-left: 25px;
-      margin-top: 132px;
+      margin-top: 100px;
       font-size: 15px;
-      width: 100%;
+      width: 90%;
       color: $white;
       background: $green;
       border: none;
@@ -476,19 +540,12 @@ $radio_color: #d8d8d8;
   .slider {
     .media_content {
       img {
-        width: 80%;
+        width: 100%;
         height: 90%;
         margin-top: 0;
-        margin-left: 30px;
       }
       p {
         margin-top: 30px;
-      }
-    }
-    .content_item {
-      button {
-        margin-left: 20px;
-        margin-right: 20px;
       }
     }
   }
@@ -500,6 +557,12 @@ $radio_color: #d8d8d8;
         width: 250px;
         height: 400px;
         margin-top: 10px;
+        margin-left: -6px;
+      }
+    }
+    .content2_location {
+      button {
+        margin-left: 15px;
       }
     }
   }
@@ -590,6 +653,58 @@ $radio_color: #d8d8d8;
       button {
         width: 50%;
         height: 50%;
+      }
+    }
+  }
+}
+
+@media (min-width: 740px) {
+  .slider {
+    .content_two {
+      h1 {
+        font-size: 100px;
+      }
+      h2 {
+        font-size: 90px;
+      }
+      h3 {
+        padding: 30px;
+        font-size: 30px;
+      }
+      h5 {
+        font-size: 40px;
+        letter-spacing: -1px;
+      }
+      .content2_item {
+        margin-top: 50px;
+        .flip-food {
+          display: inline;
+          width: 100%;
+          height: 80%;
+          left: 0;
+        }
+        .content2_location {
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          margin-top: 50px;
+          img {
+            margin-left: 48%;
+            margin-bottom: 20px;
+          }
+        }
+        p {
+          font-size: 25px;
+        }
+        span {
+          font-size: 50px;
+          margin-top: -5px;
+        }
+        button {
+          margin-top: 150px;
+          font-size: 25px;
+          padding: 15px;
+        }
       }
     }
   }

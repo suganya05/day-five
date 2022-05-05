@@ -400,9 +400,9 @@
           align-items: center;
   padding: 10px 32px;
   margin-left: 25px;
-  margin-top: 25px;
+  margin-top: 15px;
   font-size: 15px;
-  width: 309px;
+  width: 90%;
   color: #ffffff;
   background: #00ce53;
   border: none;
@@ -505,7 +505,7 @@
   margin-left: 25px;
   margin-top: 132px;
   font-size: 15px;
-  width: 300px;
+  width: 100%;
   color: #ffffff;
   background: #00ce53;
   border: none;
@@ -549,46 +549,104 @@
   font-size: 0;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 320px) {
+  .slider .media_content img {
+    width: 80%;
+    height: 90%;
+    margin-top: 0;
+    margin-left: 30px;
+  }
+  .slider .media_content p {
+    margin-top: 30px;
+  }
+  .slider .content_item button {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 320px) {
+  .content2_item .item2 img {
+    width: 250px;
+    height: 400px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 400px) {
   .slider .content h3 {
     font-size: 50px;
     margin-top: 60px;
   }
   .slider .content h1 {
-    font-size: 190px;
+    font-size: 150px;
     margin-top: -5px;
   }
   .slider .content img {
-    margin-bottom: 30px;
-    margin-left: 35px;
-    width: 90%;
-    height: 80%;
+    margin: auto;
+    width: 80%;
+    height: 90%;
   }
   .slider .content p {
-    font-size: 35px;
+    font-size: 32px;
     margin-top: 55px;
   }
   .slider .content .content_item img {
-    width: 40px;
-    height: 45px;
-    margin-left: 115px;
-    margin-bottom: 0px;
+    width: 30px;
+    height: 35px;
   }
   .slider .content .content_item p {
-    margin-left: 3em;
-    margin-top: 20px;
+    margin: auto;
     font-size: 22px;
   }
   .slider .content .content_item span {
-    margin-left: 5em;
+    margin: auto;
+    margin-left: 40%;
     font-size: 42px;
   }
   .slider .content button {
     font-size: 25px;
-    padding: 15px;
-    width: 60%;
-    margin-left: 20%;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
     margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 700px) {
+  .slider .content_item img {
+    width: 30px;
+    height: 35px;
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 900px) {
+  .slider .content_item img {
+    width: 30px;
+    height: 35px;
+    margin-left: 100px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .slider .media_content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3fr 1fr;
+        grid-template-columns: 3fr 1fr;
+  }
+  .slider .media_content p {
+    margin: auto;
+    margin-left: -55px;
+  }
+  .slider .content_item img {
+    margin-left: 22%;
+    margin-bottom: -20px;
+  }
+  .slider .content_item button {
+    width: 50%;
+    height: 50%;
   }
 }
 /*# sourceMappingURL=suganya.css.map */

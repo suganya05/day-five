@@ -35,16 +35,15 @@ $radio_color: #d8d8d8;
   padding: 30px;
   .alert_content {
     p {
-      font-size: 16px;
+      font-size: 11px;
     }
     .alert_accept {
       display: flex;
       margin-top: 20px;
-
       gap: 10px;
 
       button {
-        font-size: 13px;
+        font-size: 11px;
         background-color: $green;
         color: $white;
         border: none;
@@ -55,13 +54,15 @@ $radio_color: #d8d8d8;
       .alert_settings {
         display: flex;
         gap: 10px;
+        margin-top: 8px;
+        margin-left: 8px;
         img {
           width: 20px;
           height: 20px;
         }
         p {
           color: $blue;
-          font-size: 15px;
+          font-size: 11px;
         }
       }
     }
@@ -72,37 +73,40 @@ $radio_color: #d8d8d8;
     align-items: center;
     text-align: center;
     justify-content: center;
+
     .buttonY {
       outline: none;
       background: none;
       border: none;
-      font-size: 25px;
+      font-size: 11px;
       color: $white;
+      margin-left: 35px;
     }
     p {
-      font-size: 15px;
+      font-size: 11px;
     }
   }
 }
 
 .navbar {
   display: grid;
-  grid-template-columns: 2.5fr 1fr;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   width: 100%;
   height: 67px;
-  border-bottom: 1px solid $grey_1;
+  border: 2px solid $background;
 }
+
 .deberry_nav {
-  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: "grold";
-  padding: 0.5em;
-  h1 {
-    font-size: 42px;
-    letter-spacing: -0.09em;
+  .deberry {
+    img {
+      width: 128px;
+      height: 46px;
+    }
   }
   sup {
     font-size: 10px;
@@ -111,26 +115,33 @@ $radio_color: #d8d8d8;
   img {
     width: 24px;
     height: 24px;
-    left: 5%;
-    right: 5%;
-    top: 4.17%;
-    bottom: 33.33%;
+    margin-right: 40px;
   }
 }
-.fingerprint {
-  position: relative;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+.skew {
+  width: 80%;
+  border-left: 2px solid $background;
+  margin-right: -50px 30px 0;
+  transform: skewX(-30deg);
+  .fingerprint {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transform: skewX(30deg);
+    margin-top: 15px;
 
-  img {
-    width: 24px;
-    height: 24px;
-  }
-  p {
-    color: $grey;
-    font-weight: 400;
-    font-size: 14px;
+    img {
+      margin-left: 15px;
+      width: 24px;
+      height: 24px;
+    }
+    p {
+      color: $grey;
+      font-weight: 400;
+      font-size: 14px;
+    }
   }
 }
 
@@ -329,11 +340,12 @@ $radio_color: #d8d8d8;
     font-size: 21px;
     text-align: center;
     h3 {
-      font-weight: 500;
-      margin-top: 35px;
+      font-weight: 400;
+      margin-top: 28px;
+      font-size: 22px;
     }
     h1 {
-      font-size: 115px;
+      font-size: 116px;
       margin-top: -12px;
       letter-spacing: -0.09em;
       background: radial-gradient(
@@ -352,10 +364,11 @@ $radio_color: #d8d8d8;
     img {
       width: 360px;
       height: 273px;
-      margin-top: -48px;
+      margin-top: -80%;
     }
     p {
       color: $grey;
+      font-size: 21px;
       font-weight: 400;
     }
     .content_item {
@@ -363,13 +376,13 @@ $radio_color: #d8d8d8;
       grid-template-columns: 1fr 1fr;
       position: relative;
       margin-left: 100px;
-      margin-top: 10px;
+      margin-top: 20px;
       img {
         position: absolute;
         width: 20px;
         height: 23px;
-        left: 20px;
-        bottom: 40px;
+        left: 6px;
+        bottom: 30px;
       }
       .content_location {
         display: inline-block;
@@ -378,10 +391,12 @@ $radio_color: #d8d8d8;
       p {
         color: $grey;
         font-size: 16px;
+        margin-left: -60px;
       }
       span {
         font-family: "Kaushan Script", cursive;
         font-size: 30px;
+        margin-left: 50px;
         color: $green;
       }
     }
@@ -389,11 +404,11 @@ $radio_color: #d8d8d8;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 10px 32px;
+      padding: 10px 23px;
       margin-left: 25px;
-      margin-top: 15px;
-      margin-bottom: 20px;
-      font-size: 15px;
+      margin-top: 22px;
+      margin-bottom: 60px;
+      font-size: 18px;
       width: 90%;
       color: $white;
       background: $green;
@@ -406,7 +421,7 @@ $radio_color: #d8d8d8;
     h1 {
       font-size: 55px;
       letter-spacing: -0.09em;
-      margin-top: 20px;
+      margin-top: 31px;
 
       background: radial-gradient(
         95.56% 2173.67% at 3.23% 25.96%,
@@ -498,7 +513,7 @@ $radio_color: #d8d8d8;
       align-items: center;
       padding: 10px 32px;
       margin-top: 130px;
-      font-size: 15px;
+      font-size: 18px;
       width: 90%;
       color: $white;
       background: $green;
@@ -528,11 +543,14 @@ $radio_color: #d8d8d8;
         border: $grey_1;
         background-color: $grey_1;
         border-radius: 50%;
-        width: 8px;
-        height: 8px;
+        width: 6px;
+        height: 6px;
         font-size: 0;
       }
     }
+  }
+  .slick-dots .slick-active button {
+    background: $green;
   }
 }
 
@@ -542,10 +560,10 @@ $radio_color: #d8d8d8;
       img {
         width: 100%;
         height: 90%;
-        margin-top: 0;
+        margin-top: -50px;
       }
       p {
-        margin-top: 30px;
+        margin-top: 15px;
       }
     }
   }
@@ -564,6 +582,10 @@ $radio_color: #d8d8d8;
 }
 
 @media (min-width: 400px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
   .slider {
     .content {
       h3 {
@@ -609,6 +631,13 @@ $radio_color: #d8d8d8;
   }
 }
 @media (min-width: 700px) {
+  .alert_box {
+    .alert_content {
+      p {
+        font-size: 15px;
+      }
+    }
+  }
   .slider {
     .content_item {
       img {
@@ -626,6 +655,14 @@ $radio_color: #d8d8d8;
         width: 30px;
         height: 35px;
         margin-left: 100px;
+      }
+    }
+    .slick-dots {
+      li {
+        button {
+          width: 11px;
+          height: 11px;
+        }
       }
     }
   }
@@ -709,7 +746,7 @@ $radio_color: #d8d8d8;
           text-align: center;
           margin-top: 50px;
           img {
-            margin-left: 48%;
+            margin-left: 49%;
             margin-bottom: 20px;
           }
         }

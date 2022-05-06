@@ -497,7 +497,7 @@ $radio_color: #d8d8d8;
       justify-content: center;
       align-items: center;
       padding: 10px 32px;
-      margin-top: 100px;
+      margin-top: 130px;
       font-size: 15px;
       width: 90%;
       color: $white;
@@ -558,11 +558,6 @@ $radio_color: #d8d8d8;
         height: 400px;
         margin-top: 10px;
         margin-left: -6px;
-      }
-    }
-    .content2_location {
-      button {
-        margin-left: 15px;
       }
     }
   }
@@ -637,6 +632,11 @@ $radio_color: #d8d8d8;
 }
 @media (min-width: 1440px) {
   .slider {
+    .content {
+      h1 {
+        font-size: 230px;
+      }
+    }
     .media_content {
       display: grid;
       grid-template-columns: 3fr 1fr;
@@ -651,24 +651,44 @@ $radio_color: #d8d8d8;
         margin-bottom: -20px;
       }
       button {
-        width: 50%;
-        height: 50%;
+        width: 20px;
+        height: 20px;
       }
     }
   }
 }
 
 @media (min-width: 740px) {
+  .alert_box {
+    .alert_content {
+      p {
+        font-size: 20px;
+        width: 100%;
+        text-align: justify;
+      }
+      .alert_accept {
+        button {
+          width: 30%;
+        }
+        .alert_settings {
+          margin-top: 10px;
+          img {
+            margin-left: 40px;
+          }
+        }
+      }
+    }
+  }
   .slider {
     .content_two {
       h1 {
-        font-size: 100px;
+        font-size: 150px;
       }
       h2 {
-        font-size: 90px;
+        font-size: 150px;
       }
       h3 {
-        padding: 30px;
+        padding: 50px;
         font-size: 30px;
       }
       h5 {
@@ -702,6 +722,7 @@ $radio_color: #d8d8d8;
         }
         button {
           margin-top: 150px;
+          margin-left: 35px;
           font-size: 25px;
           padding: 15px;
         }

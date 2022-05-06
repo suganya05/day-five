@@ -582,7 +582,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 32px;
-  margin-top: 100px;
+  margin-top: 130px;
   font-size: 15px;
   width: 90%;
   color: #ffffff;
@@ -646,9 +646,6 @@
     margin-top: 10px;
     margin-left: -6px;
   }
-  .content2_item .content2_location button {
-    margin-left: 15px;
-  }
 }
 
 @media (min-width: 400px) {
@@ -708,6 +705,9 @@
 }
 
 @media (min-width: 1440px) {
+  .slider .content h1 {
+    font-size: 230px;
+  }
   .slider .media_content {
     display: -ms-grid;
     display: grid;
@@ -723,20 +723,34 @@
     margin-bottom: -20px;
   }
   .slider .content_item button {
-    width: 50%;
-    height: 50%;
+    width: 20px;
+    height: 20px;
   }
 }
 
 @media (min-width: 740px) {
+  .alert_box .alert_content p {
+    font-size: 20px;
+    width: 100%;
+    text-align: justify;
+  }
+  .alert_box .alert_content .alert_accept button {
+    width: 30%;
+  }
+  .alert_box .alert_content .alert_accept .alert_settings {
+    margin-top: 10px;
+  }
+  .alert_box .alert_content .alert_accept .alert_settings img {
+    margin-left: 40px;
+  }
   .slider .content_two h1 {
-    font-size: 100px;
+    font-size: 150px;
   }
   .slider .content_two h2 {
-    font-size: 90px;
+    font-size: 150px;
   }
   .slider .content_two h3 {
-    padding: 30px;
+    padding: 50px;
     font-size: 30px;
   }
   .slider .content_two h5 {
@@ -775,6 +789,7 @@
   }
   .slider .content_two .content2_item button {
     margin-top: 150px;
+    margin-left: 35px;
     font-size: 25px;
     padding: 15px;
   }

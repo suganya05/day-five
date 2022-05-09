@@ -22,7 +22,7 @@ body {
       grid-template-columns: 3fr 1fr;
   font-style: normal;
   word-spacing: 1px;
-  font-weight: 400;
+  font-weight: 100;
   line-height: 12px;
   padding: 16px 23px;
   color: #C8C8C8;
@@ -36,6 +36,7 @@ body {
   margin-top: 10px;
   display: -ms-grid;
   display: grid;
+  gap: 20px;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
 }
@@ -46,8 +47,8 @@ body {
   border: 1px solid #00CE53;
   background: #00CE53;
   text-align: center;
-  width: 80%;
-  padding: 5px 0;
+  width: 120px;
+  padding: 5px 20px;
 }
 
 .toast-container .text-contant .box .setting {
@@ -93,8 +94,6 @@ nav .bar {
   z-index: 1000;
   bottom: 0;
   right: 0;
-  width: 70%;
-  height: 90%;
   padding: 38px 27px;
 }
 
@@ -521,15 +520,14 @@ nav .navbar-1 .nav-access img {
   font-weight: 400;
 }
 
-.home .second-page .content .content_item {
+.home .second-page .content .content-item {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2fr;
       grid-template-columns: 1fr 2fr;
-  place-items: center;
 }
 
-.home .second-page .content .content_item img {
+.home .second-page .content .content-item img {
   color: #00CE53;
   width: 24px;
   height: 24px;
@@ -539,18 +537,18 @@ nav .navbar-1 .nav-access img {
   margin-left: 70px;
 }
 
-.home .second-page .content .content_item .content_location {
+.home .second-page .content .content-item .content-location {
+  text-align: left;
   display: inline-block;
-  margin-right: 100px;
   margin-top: 10px;
 }
 
-.home .second-page .content .content_item h2 {
+.home .second-page .content .content-item h2 {
   color: #777777;
   font-size: 16px;
 }
 
-.home .second-page .content .content_item span {
+.home .second-page .content .content-item span {
   font-family: "Kaushan Script", cursive;
   font-size: 30px;
   color: #00CE53;
@@ -745,8 +743,9 @@ nav .navbar-1 .nav-access img {
 }
 
 @media screen and (min-width: 400px) {
-  nav .bar {
-    padding-bottom: 20px;
+  .toast-container {
+    line-height: 16px;
+    font-size: 15px;
   }
   nav .bar .bar-logo h1 {
     margin-bottom: 20px;
@@ -755,10 +754,10 @@ nav .navbar-1 .nav-access img {
     margin-bottom: 20px;
   }
   nav .bar .box-container .box {
-    margin: 15px 0;
+    margin: 25px 0;
   }
   nav .bar .box-container .box-access {
-    margin: 15px 0;
+    margin: 25px 0;
   }
   nav .bar .content {
     margin-bottom: 10px;
@@ -806,13 +805,12 @@ nav .navbar-1 .nav-access img {
     width: 80%;
     padding-left: 30px;
     height: 40vh;
-    margin-bottom: 10px;
   }
   .home .second-page .content p {
     margin-top: 0;
     font-size: 20px;
   }
-  .home .second-page .content .content_item {
+  .home .second-page .content .content-item {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 2fr;
@@ -820,20 +818,16 @@ nav .navbar-1 .nav-access img {
     justify-self: flex-end;
     margin-right: 1em;
   }
-  .home .second-page .content .content_item i {
+  .home .second-page .content .content-item i {
     margin: 20px;
   }
-  .home .second-page .content .content_item .content_location {
+  .home .second-page .content .content-item .content-location {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     place-items: center;
     gap: 20px;
     justify-self: flex-start;
-  }
-  .home .second-page .content button {
-    width: 80%;
-    margin-left: 50px;
   }
   .home .third-page {
     margin-top: 20px;
@@ -902,7 +896,8 @@ nav .navbar-1 .nav-access img {
     margin-left: 320px;
   }
   .home .first-page .content-item .location button {
-    width: 90%;
+    margin-left: 140px;
+    width: 50%;
     margin-top: 70px;
   }
   .home .second-page .content h3 {
@@ -929,14 +924,22 @@ nav .navbar-1 .nav-access img {
     margin-bottom: 60px;
   }
   .home .second-page .content .content-item {
-    padding-top: 120px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 5fr;
-        grid-template-columns: 1fr 5fr;
+    gap: 20px;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
   }
-  .home .second-page .content .content-item h2 {
-    margin-bottom: 120px;
+  .home .second-page .content .content-item img {
+    margin-top: 0;
+  }
+  .home .second-page .content .content-item .content-location {
+    margin-top: -20px;
+  }
+  .home .second-page .content button {
+    margin-top: -50px;
+    width: 40%;
+    margin-left: 50px;
   }
   .home .third-page .content h1 {
     font-size: 60px;
@@ -964,7 +967,8 @@ nav .navbar-1 .nav-access img {
     margin-left: 320px;
   }
   .home .third-page .content-item .location button {
-    width: 90%;
+    margin-left: 140px;
+    width: 50%;
     margin-top: 70px;
   }
 }
@@ -986,6 +990,9 @@ nav .navbar-1 .nav-access img {
   }
   .home .first-page .content-item .location img {
     margin-left: 370px;
+  }
+  .home .first-page .content-item .location button {
+    margin-left: 200px;
   }
   .home .second-page .content h1 {
     position: absolute;
@@ -1010,11 +1017,35 @@ nav .navbar-1 .nav-access img {
   .home .third-page .content-item .location img {
     margin-left: 370px;
   }
+  .home .third-page .content-item .location button {
+    margin-left: 200px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .home .first-page .content-item .location img {
+    margin-left: 410px;
+  }
+  .home .third-page .content-item .location img {
+    margin-left: 410px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .home .first-page .content-item .location img {
+    margin-left: 450px;
+  }
+  .home .third-page .content-item .location img {
+    margin-left: 450px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
   .home .first-page .content-item .location img {
     margin-left: 500px;
+  }
+  .home .first-page .content-item .location button {
+    margin-left: 230px;
   }
   .home .second-page .content h1 {
     position: absolute;
@@ -1023,6 +1054,9 @@ nav .navbar-1 .nav-access img {
   }
   .home .third-page .content-item .location img {
     margin-left: 500px;
+  }
+  .home .third-page .content-item .location button {
+    margin-left: 230px;
   }
   .home .slick-dots li button {
     width: 7px;
@@ -1034,9 +1068,21 @@ nav .navbar-1 .nav-access img {
   }
 }
 
+@media screen and (min-width: 1070px) {
+  .home .first-page .content-item .location img {
+    margin-left: 530px;
+  }
+  .home .third-page .content-item .location img {
+    margin-left: 530px;
+  }
+}
+
 @media screen and (min-width: 1120px) {
   .home .first-page .content-item .location img {
-    margin-left: 710px;
+    margin-left: 560px;
+  }
+  .home .first-page .content-item .location button {
+    margin-left: 280px;
   }
   .home .second-page .content h1 {
     position: absolute;
@@ -1046,11 +1092,38 @@ nav .navbar-1 .nav-access img {
   .home .third-page .content-item .location img {
     margin-left: 710px;
   }
+  .home .third-page .content-item .location button {
+    margin-left: 280px;
+  }
 }
 
 @media screen and (min-width: 1220px) {
   .home .second-page .content button {
     margin-left: 150px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .home .first-page .content-item .location img {
+    margin-left: 630px;
+  }
+  .home .third-page .content-item .location img {
+    margin-left: 630px;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  .home .first-page .content-item .location img {
+    margin-left: 710px;
+  }
+  .home .first-page .content-item .location button {
+    margin-left: 320px;
+  }
+  .home .third-page .content-item .location img {
+    margin-left: 710px;
+  }
+  .home .third-page .content-item .location button {
+    margin-left: 320px;
   }
 }
 /*# sourceMappingURL=subaa.css.map */

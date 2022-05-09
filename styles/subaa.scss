@@ -38,7 +38,7 @@ body{
   grid-template-columns: 3fr 1fr;
   font-style: normal;
   word-spacing: 1px;
-  font-weight: 400;
+  font-weight: 100;
   line-height: 12px;
   padding: 16px 23px;
   color: $gray2;
@@ -49,6 +49,7 @@ body{
     .box{
       margin-top: 10px;
       display: grid;
+      gap: 20px;
       grid-template-columns: 1fr 1fr;
       .line{
         cursor: pointer;
@@ -56,8 +57,8 @@ body{
         border: 1px solid $green;
         background: $green;
         text-align: center;
-        width: 80%;
-        padding: 5px 0;
+        width: 120px;
+        padding: 5px 20px;
       }
       .setting{
         display: flex;
@@ -92,8 +93,6 @@ nav{
       z-index: 1000;
       bottom: 0;
       right: 0;
-      width: 70%;
-      height: 90%;
       padding: 38px 27px;
       .bar-logo{
         display: flex;
@@ -444,10 +443,9 @@ nav{
         color: $gray;
         font-weight: 400;
       }
-      .content_item {
+      .content-item {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        place-items: center;
     
         img {
           color: $green;
@@ -458,9 +456,9 @@ nav{
           margin-right: 1em;
           margin-left: 70px;
         }
-        .content_location {
+        .content-location {
+          text-align: left;
           display: inline-block;
-          margin-right: 100px;
           margin-top: 10px;
         }
         h2 {
@@ -641,9 +639,13 @@ nav{
 
 
 @media screen and (min-width:400px) {
+  .toast-container{
+    line-height: 16px;
+    font-size: 15px;
+  }
   nav{
     .bar{
-      padding-bottom: 20px;
+      // padding-bottom: 20px;
       .bar-logo{
         h1{
           margin-bottom: 20px;
@@ -654,10 +656,10 @@ nav{
       }
       .box-container{
         .box{
-          margin: 15px 0;
+          margin: 25px 0;
         }
         .box-access{
-          margin: 15px 0;
+          margin: 25px 0;
         }
       }
       .content{
@@ -713,13 +715,12 @@ nav{
           width: 80%;
           padding-left: 30px;
           height: 40vh;
-          margin-bottom: 10px;
         }
         p{
           margin-top: 0;
           font-size: 20px;
         }
-        .content_item{
+        .content-item{
           display: grid;
           grid-template-columns: 1fr 2fr;
          justify-self: flex-end;
@@ -727,17 +728,17 @@ nav{
           i{
             margin: 20px;
           }
-          .content_location{
+          .content-location{
             display: flex;
             place-items: center;
             gap: 20px;
             justify-self: flex-start;
           }
         }
-        button{
-          width: 80%;
-          margin-left: 50px;
-        }
+        // button{
+        //   width: 50%;
+        //   margin-left: 100px;
+        // }
       }
     }
     .third-page{
@@ -817,7 +818,8 @@ nav{
             margin-left: 320px;
           }
           button{
-            width: 90%;
+            margin-left: 140px;
+            width: 50%;
             margin-top: 70px;
           }
         }
@@ -848,12 +850,20 @@ nav{
           margin-bottom: 60px;
         }
         .content-item{
-          padding-top: 120px;
           display: grid;
-          grid-template-columns: 1fr 5fr;
-          h2{
-            margin-bottom: 120px;
+          gap: 20px;
+          grid-template-columns: 2fr 1fr;
+          img{
+            margin-top: 0;
           }
+          .content-location{
+            margin-top: -20px;
+          }
+        }
+        button{
+          margin-top: -50px;
+          width: 40%;
+          margin-left: 50px;
         }
       }
     }
@@ -882,7 +892,8 @@ nav{
             margin-left: 320px;
           }
           button{
-            width: 90%;
+            margin-left: 140px;
+            width: 50%;
             margin-top: 70px;
           }
         }
@@ -914,6 +925,9 @@ nav{
         .location{
           img{
             margin-left: 370px;
+          }
+          button{
+            margin-left: 200px;
           }
         }
       }
@@ -949,6 +963,56 @@ nav{
           img{
             margin-left: 370px;
           }
+          button{
+            margin-left: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width:850px) {
+  .home{
+    .first-page{
+      .content-item{
+        .location{
+          img{
+            margin-left: 410px;
+          }
+        }
+      }
+    }
+    .third-page{
+      .content-item{
+        .location{
+          img{
+            margin-left: 410px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:900px) {
+  .home{
+    .first-page{
+      .content-item{
+        .location{
+          img{
+            margin-left: 450px;
+          }
+        }
+      }
+    }
+    .third-page{
+      .content-item{
+        .location{
+          img{
+            margin-left: 450px;
+          }
         }
       }
     }
@@ -962,6 +1026,9 @@ nav{
           .location{
             img{
               margin-left: 500px;
+            }
+            button{
+              margin-left: 230px;
             }
           }
         }
@@ -981,6 +1048,9 @@ nav{
             img{
               margin-left: 500px;
             }
+            button{
+              margin-left: 230px;
+            }
           }
         }
       }
@@ -999,13 +1069,39 @@ nav{
     }
  }
 
+ @media screen and (min-width:1070px) {
+  .home{
+    .first-page{
+      .content-item{
+        .location{
+          img{
+            margin-left: 530px;
+          }
+        }
+      }
+    }
+    .third-page{
+      .content-item{
+        .location{
+          img{
+            margin-left: 530px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width:1120px){
       .home{
         .first-page{
           .content-item{
             .location{
               img{
-                margin-left: 710px;
+                margin-left: 560px;
+              }
+              button{
+                margin-left: 280px;
               }
             }
           }
@@ -1025,6 +1121,9 @@ nav{
               img{
                 margin-left: 710px;
               }
+              button{
+                margin-left: 280px;
+              }
             }
           }
         }
@@ -1037,6 +1136,57 @@ nav{
       .content{
         button{
           margin-left: 150px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:1250px) {
+  .home{
+    .first-page{
+      .content-item{
+        .location{
+          img{
+            margin-left: 630px;
+          }
+        }
+      }
+    }
+    .third-page{
+      .content-item{
+        .location{
+          img{
+            margin-left: 630px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:1320px) {
+  .home{
+    .first-page{
+      .content-item{
+        .location{
+          img{
+            margin-left: 710px;
+          }
+          button{
+            margin-left: 320px;
+          }
+        }
+      }
+    }
+    .third-page{
+      .content-item{
+        .location{
+          img{
+            margin-left: 710px;
+          }
+          button{
+            margin-left: 320px;
+          }
         }
       }
     }

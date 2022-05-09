@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 @font-face {
   font-family: "grold";
-  src: url(./FontsFree-Net-Fontspring-DEMO-grold-bold.ttf);
+  src: url("../Grold-Regular.ttf");
 }
 
 * {
@@ -21,6 +21,7 @@ body {
   -ms-grid-columns: 3fr 1fr;
       grid-template-columns: 3fr 1fr;
   font-style: normal;
+  word-spacing: 1px;
   font-weight: 400;
   line-height: 12px;
   padding: 16px 23px;
@@ -40,6 +41,7 @@ body {
 }
 
 .toast-container .text-contant .box .line {
+  cursor: pointer;
   color: #FFFFFF;
   border: 1px solid #00CE53;
   background: #00CE53;
@@ -65,6 +67,7 @@ body {
 }
 
 .toast-container .close {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,6 +116,7 @@ nav .bar .bar-logo h1 {
 }
 
 nav .bar .bar-logo .buttonX {
+  cursor: pointer;
   margin-bottom: 39px;
   border: none;
   display: block;
@@ -139,6 +143,7 @@ nav .bar .bar-nextline p {
 }
 
 nav .bar .bar-nextline .email-container {
+  cursor: pointer;
   color: #060606;
   font-size: 8px;
   display: -webkit-box;
@@ -219,12 +224,14 @@ nav .bar .box-container .box img {
 }
 
 nav .bar .box-container .box input {
+  cursor: pointer;
   border: none;
   outline: none;
   background: none;
 }
 
 nav .bar .box-container .box-access {
+  cursor: pointer;
   padding: 10px;
   width: 100%;
   margin: 40px 0;
@@ -263,6 +270,7 @@ nav .bar .image img {
 }
 
 nav .bar .button button {
+  cursor: pointer;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -287,7 +295,7 @@ nav .navbar {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  border: 2px solid #E5E5E5;
+  border-bottom: 1px solid #F2F2F2;
 }
 
 nav .navbar .nav-heading {
@@ -316,8 +324,7 @@ nav .navbar .nav-heading img {
 }
 
 nav .navbar-1 {
-  width: 30%;
-  border-left: 2px solid #E5E5E5;
+  border-left: 1px solid #F2F2F2;
   margin-right: 30px;
   padding: 5px 0;
   -webkit-transform: skewX(-30deg);
@@ -325,6 +332,7 @@ nav .navbar-1 {
 }
 
 nav .navbar-1 .nav-access {
+  cursor: pointer;
   color: #777777;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -352,7 +360,7 @@ nav .navbar-1 .nav-access img {
 }
 
 .home .first-page {
-  margin-top: 55px;
+  margin-top: 45px;
 }
 
 .home .first-page .content {
@@ -361,7 +369,7 @@ nav .navbar-1 .nav-access img {
 }
 
 .home .first-page .content h1 {
-  letter-spacing: -0.1em;
+  letter-spacing: -0.09em;
   text-align: center;
   font-size: 54px;
   font-weight: 500;
@@ -373,8 +381,8 @@ nav .navbar-1 .nav-access img {
 }
 
 .home .first-page .content h2 {
-  letter-spacing: -0.1em;
-  font-size: 54px;
+  letter-spacing: -0.09em;
+  font-size: 50px;
   font-weight: 500;
   color: #000000;
   text-align: center;
@@ -441,6 +449,7 @@ nav .navbar-1 .nav-access img {
 }
 
 .home .first-page .content-item .location p {
+  font-weight: 400;
   margin-top: 5px;
   font-size: 16px;
   color: #777777;
@@ -453,6 +462,7 @@ nav .navbar-1 .nav-access img {
 }
 
 .home .first-page .content-item .location button {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -514,8 +524,8 @@ nav .navbar-1 .nav-access img {
 .home .second-page .content .content_item {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
   place-items: center;
 }
 
@@ -547,6 +557,7 @@ nav .navbar-1 .nav-access img {
 }
 
 .home .second-page .content button {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -566,7 +577,7 @@ nav .navbar-1 .nav-access img {
 }
 
 .home .third-page {
-  margin-top: 55px;
+  margin-top: 45px;
 }
 
 .home .third-page .content {
@@ -575,7 +586,7 @@ nav .navbar-1 .nav-access img {
 }
 
 .home .third-page .content h1 {
-  letter-spacing: -0.1em;
+  letter-spacing: -0.09em;
   text-align: center;
   font-size: 54px;
   font-weight: 500;
@@ -587,7 +598,7 @@ nav .navbar-1 .nav-access img {
 }
 
 .home .third-page .content h2 {
-  letter-spacing: -0.1em;
+  letter-spacing: -0.09em;
   font-size: 54px;
   font-weight: 500;
   color: #000000;
@@ -651,10 +662,11 @@ nav .navbar-1 .nav-access img {
 
 .home .third-page .content-item .location img {
   width: 25px;
-  height: 24px;
+  height: 25px;
 }
 
 .home .third-page .content-item .location p {
+  font-weight: 400;
   margin-top: 5px;
   font-size: 16px;
   color: #777777;
@@ -667,6 +679,7 @@ nav .navbar-1 .nav-access img {
 }
 
 .home .third-page .content-item .location button {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -732,47 +745,78 @@ nav .navbar-1 .nav-access img {
 }
 
 @media screen and (min-width: 400px) {
-  .bar {
-    display: none;
+  nav .bar {
+    padding-bottom: 20px;
+  }
+  nav .bar .bar-logo h1 {
+    margin-bottom: 20px;
+  }
+  nav .bar .bar-logo .buttonX {
+    margin-bottom: 20px;
+  }
+  nav .bar .box-container .box {
+    margin: 15px 0;
+  }
+  nav .bar .box-container .box-access {
+    margin: 15px 0;
+  }
+  nav .bar .content {
+    margin-bottom: 10px;
+  }
+  .home .first-page {
+    margin-top: 20px;
   }
   .home .first-page .content h1 {
-    font-size: 80px;
+    font-size: 65px;
   }
   .home .first-page .content h2 {
-    font-size: 70px;
+    font-size: 55px;
   }
   .home .first-page .content p {
     font-size: 25px;
   }
   .home .first-page .content h3 {
-    font-size: 30px;
+    font-size: 20px;
+  }
+  .home .first-page .content-item .item {
+    width: 230px;
   }
   .home .first-page .content-item .location {
+    top: 80px;
     margin-top: 20px;
   }
   .home .first-page .content-item .location p {
     margin: 15px 0;
     font-size: 20px;
   }
+  .home .first-page .content-item .location button {
+    margin-top: 50px;
+  }
+  .home .second-page {
+    margin-top: 25px;
+  }
   .home .second-page .content h3 {
     font-size: 34px;
   }
   .home .second-page .content h1 {
+    font-size: 100px;
     text-align: center;
   }
   .home .second-page .content img {
-    width: 90%;
+    width: 80%;
     padding-left: 30px;
-    height: 50vh;
+    height: 40vh;
+    margin-bottom: 10px;
   }
   .home .second-page .content p {
-    font-size: 30px;
+    margin-top: 0;
+    font-size: 20px;
   }
   .home .second-page .content .content_item {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
     justify-self: flex-end;
     margin-right: 1em;
   }
@@ -791,24 +835,34 @@ nav .navbar-1 .nav-access img {
     width: 80%;
     margin-left: 50px;
   }
+  .home .third-page {
+    margin-top: 20px;
+  }
   .home .third-page .content h1 {
-    font-size: 80px;
+    font-size: 65px;
   }
   .home .third-page .content h2 {
-    font-size: 70px;
+    font-size: 55px;
   }
   .home .third-page .content p {
     font-size: 25px;
   }
   .home .third-page .content h3 {
-    font-size: 30px;
+    font-size: 20px;
+  }
+  .home .third-page .content-item .item {
+    width: 230px;
   }
   .home .third-page .content-item .location {
+    top: 80px;
     margin-top: 20px;
   }
   .home .third-page .content-item .location p {
     margin: 15px 0;
     font-size: 20px;
+  }
+  .home .third-page .content-item .location button {
+    margin-top: 50px;
   }
   .home .slick-dots li button {
     border: 1px solid #C8C8C8;
@@ -821,9 +875,19 @@ nav .navbar-1 .nav-access img {
 }
 
 @media screen and (min-width: 600px) {
+  .home .first-page .content h1 {
+    font-size: 60px;
+  }
+  .home .first-page .content h2 {
+    font-size: 50px;
+  }
   .home .first-page .content-item .items {
+    margin-top: -50px;
     left: 0;
     display: inline;
+  }
+  .home .first-page .content-item .items img {
+    width: 230px;
   }
   .home .first-page .content-item .location {
     -webkit-box-pack: center;
@@ -839,7 +903,7 @@ nav .navbar-1 .nav-access img {
   }
   .home .first-page .content-item .location button {
     width: 90%;
-    margin-top: 100px;
+    margin-top: 70px;
   }
   .home .second-page .content h3 {
     font-size: 50px;
@@ -847,12 +911,12 @@ nav .navbar-1 .nav-access img {
   }
   .home .second-page .content h1 {
     position: absolute;
-    margin-top: 60px;
-    padding-left: 380px;
+    margin-top: 40px;
+    padding-left: 300px;
     font-size: 120px;
   }
   .home .second-page .content img {
-    margin-top: 40px;
+    margin-top: 10px;
     width: 50%;
     padding-left: 30px;
     height: 50vh;
@@ -860,7 +924,7 @@ nav .navbar-1 .nav-access img {
   .home .second-page .content p {
     font-size: 24px;
     text-align: right;
-    margin-top: -150px;
+    margin-top: -100px;
     padding-right: 10px;
     margin-bottom: 60px;
   }
@@ -868,15 +932,24 @@ nav .navbar-1 .nav-access img {
     padding-top: 120px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
+    -ms-grid-columns: 1fr 5fr;
+        grid-template-columns: 1fr 5fr;
   }
   .home .second-page .content .content-item h2 {
     margin-bottom: 120px;
   }
+  .home .third-page .content h1 {
+    font-size: 60px;
+  }
+  .home .third-page .content h2 {
+    font-size: 50px;
+  }
   .home .third-page .content-item .items {
     left: 0;
     display: inline;
+  }
+  .home .third-page .content-item .items img {
+    width: 230px;
   }
   .home .third-page .content-item .location {
     -webkit-box-pack: center;
@@ -892,23 +965,24 @@ nav .navbar-1 .nav-access img {
   }
   .home .third-page .content-item .location button {
     width: 90%;
-    margin-top: 100px;
+    margin-top: 70px;
   }
 }
 
 @media screen and (min-width: 760px) {
   .home .first-page .content h1 {
-    font-size: 100px;
-  }
-  .home .first-page .content h2 {
     font-size: 80px;
   }
+  .home .first-page .content h2 {
+    font-size: 60px;
+  }
   .home .first-page .content p {
-    padding: 20px 0 0;
-    font-size: 35px;
+    margin-top: 20px;
+    font-size: 25px;
   }
   .home .first-page .content h3 {
-    font-size: 50px;
+    margin-top: 15px;
+    font-size: 25px;
   }
   .home .first-page .content-item .location img {
     margin-left: 370px;
@@ -920,20 +994,21 @@ nav .navbar-1 .nav-access img {
     font-size: 150px;
   }
   .home .third-page .content h1 {
-    font-size: 100px;
-  }
-  .home .third-page .content h2 {
     font-size: 80px;
   }
+  .home .third-page .content h2 {
+    font-size: 60px;
+  }
   .home .third-page .content p {
-    padding: 20px 0 0;
-    font-size: 35px;
+    margin-top: 20px;
+    font-size: 25px;
   }
   .home .third-page .content h3 {
-    font-size: 50px;
+    margin-top: 15px;
+    font-size: 25px;
   }
   .home .third-page .content-item .location img {
-    margin-left: 320px;
+    margin-left: 370px;
   }
 }
 
@@ -950,12 +1025,12 @@ nav .navbar-1 .nav-access img {
     margin-left: 500px;
   }
   .home .slick-dots li button {
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
   }
   .home .slick-dots .slick-active button {
-    width: 11px;
-    height: 11px;
+    width: 8px;
+    height: 8px;
   }
 }
 
@@ -974,14 +1049,8 @@ nav .navbar-1 .nav-access img {
 }
 
 @media screen and (min-width: 1220px) {
-  .home .first-page .content-item .location img {
-    margin-left: 610px;
-  }
-  .home .second-page .content img {
-    height: 80vh;
-  }
-  .home .third-page .content-item .location img {
-    margin-left: 610px;
+  .home .second-page .content button {
+    margin-left: 150px;
   }
 }
 /*# sourceMappingURL=subaa.css.map */

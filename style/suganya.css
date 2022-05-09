@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 @font-face {
   font-family: "grold";
-  src: url(/images/FontsFree-Net-Fontspring-DEMO-grold-bold.ttf);
+  src: url(../images/Grold-Regular.ttf);
 }
 
 * {
@@ -20,7 +20,7 @@
       grid-template-columns: 3fr 1fr;
   background-color: #121212;
   color: #c8c8c8;
-  padding: 30px;
+  padding: 20px;
 }
 
 .alert_box .alert_content p {
@@ -78,30 +78,25 @@
           justify-content: center;
 }
 
-.alert_box .alert_close .buttonY {
-  outline: none;
-  background: none;
-  border: none;
-  font-size: 11px;
-  color: #ffffff;
+.alert_box .alert_close .img {
+  cursor: pointer;
   margin-left: 35px;
 }
 
 .alert_box .alert_close p {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .navbar {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 67px;
-  border: 2px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .deberry_nav {
@@ -130,13 +125,12 @@
 .deberry_nav img {
   width: 24px;
   height: 24px;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 .skew {
-  width: 80%;
+  width: 0px;
   border-left: 2px solid #e5e5e5;
-  margin-right: -50px 30px 0;
   -webkit-transform: skewX(-30deg);
           transform: skewX(-30deg);
 }
@@ -165,9 +159,11 @@
 }
 
 .skew .fingerprint p {
+  cursor: pointer;
   color: #777777;
   font-weight: 400;
   font-size: 14px;
+  margin-right: -70px;
 }
 
 .container-list {
@@ -196,7 +192,8 @@
 }
 
 .container-list .container-title h1 {
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 400;
   color: #010101;
 }
 
@@ -206,6 +203,7 @@
   border: none;
   font-size: 35px;
   color: #777777;
+  margin-left: 30px;
 }
 
 .container-list .credential-access {
@@ -219,13 +217,15 @@
 }
 
 .container-list .credential-access p {
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 400;
   color: #0066ff;
 }
 
 .container-list .credential-access .email-toggle {
   color: #777777;
   font-size: 8px;
+  font-weight: 400;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,6 +363,7 @@
   outline: none;
   background: none;
   font-size: 12px;
+  font-weight: 400;
 }
 
 .container-list .pick-up-line {
@@ -430,12 +431,6 @@
   text-shadow: 0px 1.87736px 13.1415px rgba(182, 182, 182, 0.14);
 }
 
-.slider .content img {
-  width: 360px;
-  height: 273px;
-  margin-top: -80%;
-}
-
 .slider .content p {
   color: #777777;
   font-size: 21px;
@@ -474,6 +469,7 @@
 .slider .content .content_item span {
   font-family: "Kaushan Script", cursive;
   font-size: 30px;
+  font-weight: 400;
   margin-left: 50px;
   color: #00ce53;
 }
@@ -493,6 +489,7 @@
   margin-top: 22px;
   margin-bottom: 60px;
   font-size: 18px;
+  font-weight: 400;
   width: 90%;
   color: #ffffff;
   background: #00ce53;
@@ -533,14 +530,15 @@
 .slider .content_two h3 {
   color: #777777;
   font-size: 17px;
-  margin-top: 30px;
+  padding: 30px;
   font-weight: 400;
 }
 
 .slider .content_two h5 {
   color: #00ce53;
   font-size: 20px;
-  margin-top: 20px;
+  margin-top: -15px;
+  font-weight: 700;
 }
 
 .slider .content2_item {
@@ -563,9 +561,9 @@
 .slider .content2_item .content2_location {
   position: absolute;
   text-align: left;
+  margin-left: 50px;
   width: 100%;
   height: 100%;
-  left: 18px;
   top: 172px;
 }
 
@@ -578,6 +576,7 @@
 .slider .content2_item .content2_location p {
   font-size: 15px;
   color: #777777;
+  margin-top: 10px;
 }
 
 .slider .content2_item .content2_location span {
@@ -596,13 +595,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   padding: 10px 32px;
   margin-top: 130px;
   font-size: 18px;
-  width: 90%;
+  font-weight: 400;
+  width: 80%;
   color: #ffffff;
   background: #00ce53;
   border: none;
+  cursor: pointer;
 }
 
 .slider .slick-dots {
@@ -650,15 +652,11 @@
 @media (min-width: 320px) {
   .slider .media_content img {
     width: 100%;
-    height: 90%;
-    margin-top: -50px;
+    margin-top: -30px;
   }
   .slider .media_content p {
     margin-top: 15px;
   }
-}
-
-@media (min-width: 320px) {
   .content2_item .item2 img {
     width: 250px;
     height: 400px;
@@ -671,25 +669,28 @@
   .navbar {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 3fr 1fr;
-        grid-template-columns: 3fr 1fr;
+    -ms-grid-columns: 4fr 1fr;
+        grid-template-columns: 4fr 1fr;
   }
   .slider .content h3 {
-    font-size: 50px;
-    margin-top: 60px;
+    font-size: 35px;
+    margin-top: 30px;
   }
   .slider .content h1 {
     font-size: 150px;
-    margin-top: -5px;
+    margin-top: -25px;
   }
   .slider .content img {
     margin: auto;
-    width: 80%;
-    height: 90%;
+    max-width: 100vh;
+    margin-top: -50px;
   }
   .slider .content p {
-    font-size: 32px;
-    margin-top: 55px;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  .slider .content .content_item {
+    margin-top: 2px;
   }
   .slider .content .content_item img {
     width: 30px;
@@ -702,7 +703,7 @@
   .slider .content .content_item span {
     margin: auto;
     margin-left: 40%;
-    font-size: 42px;
+    font-size: 30px;
   }
   .slider .content button {
     font-size: 25px;
@@ -710,21 +711,70 @@
     width: 90%;
     margin: auto;
     margin-bottom: 30px;
+    margin-top: 10px;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 720px) {
   .alert_box .alert_content p {
     font-size: 15px;
+  }
+  .deberry_nav {
+    -ms-grid-columns: 3fr 1fr;
+        grid-template-columns: 3fr 1fr;
+  }
+  .skew {
+    margin-left: 50px;
+  }
+  .slider .content .media_content img {
+    max-width: 50%;
   }
   .slider .content_item img {
     width: 30px;
     height: 35px;
     margin-left: 50px;
   }
+  .slider .content2_item {
+    margin-top: 0px;
+  }
+  .slider .content2_item .flip-food {
+    display: inline;
+    width: 100%;
+    height: 80%;
+    left: 0;
+  }
+  .slider .content2_item .content2_location {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-top: -70px;
+  }
+  .slider .content2_item .content2_location img {
+    margin-left: 40%;
+    margin-bottom: 20px;
+  }
+  .slider .content2_item p {
+    font-size: 25%;
+    margin-left: -16%;
+  }
+  .slider .content2_item span {
+    font-size: 50px;
+    margin-left: -17%;
+  }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 720px) and (min-width: 900px) {
+  .container-list {
+    width: 50%;
+    height: 100vh;
+  }
+  .slider .content h1 {
+    font-size: 100px;
+  }
   .slider .content_item img {
     width: 30px;
     height: 35px;
@@ -734,96 +784,83 @@
     width: 11px;
     height: 11px;
   }
+  .slider .content2_location button {
+    margin-left: 30px;
+  }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 720px) and (min-width: 1440px) {
+  .navbar {
+    -ms-grid-columns: 5.5fr 1fr;
+        grid-template-columns: 5.5fr 1fr;
+  }
+  .navbar .deberry_nav img {
+    margin-right: 5px;
+  }
+  .navbar .container-list {
+    width: 50%;
+    height: 100vh;
+  }
+  .skew .fingerprint {
+    margin-left: 50px;
+  }
   .slider .content h1 {
-    font-size: 230px;
+    font-size: 150px;
+    margin-top: -25px;
   }
   .slider .media_content {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 3fr 1fr;
-        grid-template-columns: 3fr 1fr;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
   }
   .slider .media_content p {
     margin: auto;
     margin-left: -55px;
+    font-size: 35px;
   }
   .slider .content_item img {
-    margin-left: 22%;
-    margin-bottom: -20px;
+    margin-left: 20%;
+  }
+  .slider .content_item .content_location p {
+    margin-right: -10%;
   }
   .slider .content_item button {
     width: 20px;
     height: 20px;
   }
-}
-
-@media (min-width: 740px) {
-  .alert_box .alert_content p {
-    font-size: 20px;
-    width: 100%;
-    text-align: justify;
-  }
-  .alert_box .alert_content .alert_accept button {
-    width: 30%;
-  }
-  .alert_box .alert_content .alert_accept .alert_settings {
-    margin-top: 10px;
-  }
-  .alert_box .alert_content .alert_accept .alert_settings img {
-    margin-left: 40px;
-  }
   .slider .content_two h1 {
-    font-size: 150px;
+    font-size: 90px;
+    margin-top: 5px;
   }
   .slider .content_two h2 {
-    font-size: 150px;
+    font-size: 90px;
   }
   .slider .content_two h3 {
-    padding: 50px;
-    font-size: 30px;
+    font-size: 25px;
+    padding: 40px;
   }
   .slider .content_two h5 {
-    font-size: 40px;
-    letter-spacing: -1px;
-  }
-  .slider .content_two .content2_item {
-    margin-top: 50px;
-  }
-  .slider .content_two .content2_item .flip-food {
-    display: inline;
-    width: 100%;
-    height: 80%;
-    left: 0;
-  }
-  .slider .content_two .content2_item .content2_location {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    margin-top: 50px;
+    font-size: 28px;
+    margin-top: -30px;
+    font-weight: 700;
   }
   .slider .content_two .content2_item .content2_location img {
-    margin-left: 49%;
-    margin-bottom: 20px;
+    margin-left: 45%;
+    width: 30px;
+    height: 33px;
   }
-  .slider .content_two .content2_item p {
+  .slider .content_two .content2_item .content2_location p {
+    margin-left: -8%;
     font-size: 25px;
   }
-  .slider .content_two .content2_item span {
-    font-size: 50px;
-    margin-top: -5px;
+  .slider .content_two .content2_item .content2_location span {
+    margin-left: -8%;
+    font-size: 40px;
   }
-  .slider .content_two .content2_item button {
-    margin-top: 150px;
-    margin-left: 35px;
-    font-size: 25px;
-    padding: 15px;
+  .slider .content_two .content2_item .content2_location button {
+    margin-left: 6%;
+    margin-top: 70px;
   }
 }
 /*# sourceMappingURL=suganya.css.map */
